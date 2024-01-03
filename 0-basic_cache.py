@@ -2,6 +2,7 @@
 """ BasicCache module """
 from base_caching import BaseCaching
 
+
 class BasicCache(BaseCaching):
     """ BasicCache class that inherits from BaseCaching """
 
@@ -14,7 +15,7 @@ class BasicCache(BaseCaching):
     def get(self, key):
         """ Get an item by key """
         if key and key in self.cache_data:
-            # If the key is provided and exists in the cache, return the corresponding item
+            # If the key is provided and exists in the cache
             return self.cache_data.get(key)
         # If the key is not provided or doesn't exist in the cache, return None
         return None
