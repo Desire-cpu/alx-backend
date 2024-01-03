@@ -14,7 +14,7 @@ class FIFOCache(BaseCaching):
 
             # Check if the cache has exceeded its maximum capacity
             if len(self.cache_data) > self.MAX_ITEMS:
-                # If so, determine the item to be removed (FIFO: First In, First Out)
+                # If so, determine the item to be removed
                 Delete = sorted(self.cache_data)[0]
                 print("DISCARD: {}".format(Delete))
                 # Remove the oldest item from the cache
