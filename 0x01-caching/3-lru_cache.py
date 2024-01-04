@@ -31,7 +31,7 @@ class LRUCache(BaseCaching):
     def get(self, key):
         """ Get an item by key """
         if key and key in self.cache_data:
-            # If the key is provided and exists in the cache, update the access history
+            # If the key is provided and exists in the cache,
             self.updateHistory(key)
             return self.cache_data.get(key)
         # If the key is not provided or doesn't exist in the cache, return None

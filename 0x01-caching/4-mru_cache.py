@@ -7,7 +7,7 @@ class MRUCache(BaseCaching):
     """ MRUCache class that inherits from BaseCaching """
 
     def __init__(self):
-        """ Initializes the cache and sets the last accessed key to an empty string. """
+        """ Initializes the cache and sets. """
         super().__init__()
         self.last = ""
 
@@ -29,7 +29,7 @@ class MRUCache(BaseCaching):
     def get(self, key):
         """ Get an item by key """
         if key and key in self.cache_data:
-            # If the key is provided and exists in the cache, update the last accessed key
+            # If the key is provided and exists in the cache,
             self.last = key
             return self.cache_data.get(key)
         # If the key is not provided or doesn't exist in the cache, return None
